@@ -1,0 +1,39 @@
+.form-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+input {
+    width: 20rem;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    border: none;
+}
