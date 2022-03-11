@@ -8,7 +8,7 @@ import '../styles/Todo.css';
 const Todo = ({ getTodos, addTodo, deleteTodo, todo: { todos } }) => {
     const [ logout, setLogout ] = useState(null);
     const [ input, setInput ] = useState('');
-    const [email, setEmail] = useState(JSON.parse(localStorage.getItem('authorization'))[1]);
+    const email = JSON.parse(localStorage.getItem('authorization'))[1];
 
     useEffect(() => {
         getTodos(email);
