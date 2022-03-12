@@ -17,7 +17,7 @@ const Register = () => {
 
     const submitHandler = e => {
         e.preventDefault();
-        password === confirmPassword ? console.log(registerUser({ username, email, password, todoListing: [] })) : console.log('Passwords should be same');
+        password === confirmPassword ? alert(registerUser({ username, email, password, todoListing: [] })) : alert('Passwords should be same');
         setFormData({...formData, username: '', email: '', password: '', confirmPassword: ''});
     }
 
